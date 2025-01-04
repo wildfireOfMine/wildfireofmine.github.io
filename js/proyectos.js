@@ -8,13 +8,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
     .then(response=>response.json())
     .then(data =>{
         data.forEach(element => {
+            console.log(element);
+            console.log(element.html_url);
             const enlace = document.createElement("a");
             enlace.href = element.html_url;
             enlace.target = "_blank";
             const elemento = document.createElement("li");
             elemento.innerHTML = element.name;
-            elemento.appendChild(enlace);
-            lista.appendChild(elemento);
+            enlace.appendChild(elemento);
+            lista.appendChild(enlace);
         });
     })
     .catch(error =>{
