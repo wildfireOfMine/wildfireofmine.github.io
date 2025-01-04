@@ -1,0 +1,66 @@
+/* De arriba para abajo */
+
+/* Generales */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    list-style-type: none;
+    left: 0;
+    top: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 2.7em;
+}
+
+/* Cabecera */
+
+header{
+    padding: 30px 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+nav{
+    display: flex;
+}
+
+nav > ul {
+    display: flex;
+    align-self: center;
+}
+
+nav > ul > li {
+    margin: 0 5px;
+}
+
+/* Nudo */
+
+main > section {
+    margin: 10px 5px;
+}
+
+/* Pie */
+
+footer{
+    margin: 10px 5px;
+}
+
+footer > ul {
+    margin: 2em 1px;
+    display: flex;
+    justify-content: space-around;
+}
