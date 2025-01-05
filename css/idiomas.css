@@ -21,6 +21,11 @@
     left: 0;
     top: 0;
     font-family: "Ubuntu";
+    text-shadow: 
+    -1px -1px 0px black,
+    1px -1px 0px black,
+    -1px 1px 0px black,
+    1px 1px 0px black;
 }
 
 body{
@@ -51,6 +56,11 @@ h1, h2, p, a, table, th, td, thead, tbody, li{
 }
 
 /* Cabecera */
+
+.nombre{
+    font-family: "Canterbury";
+    font-size: 1.2em;
+}
 
 header{
     padding: 30px 0;
