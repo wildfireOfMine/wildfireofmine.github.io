@@ -92,7 +92,7 @@ nav > ul > li > a {
 main{
     position: relative;
     z-index: 2;
-    background-color: #000;
+    background-color: black;
 }
 
 video{
