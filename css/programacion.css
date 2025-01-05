@@ -120,10 +120,17 @@ main > section {
     padding: 100px 5px;
 }
 
+img {
+    height: 80px;
+    width: 80px;
+    
+}
+
 /* Pie */
 
 footer{
-    padding: 5px 5px 8em;
+    height: 30vh;
+    padding: 10px 10px;
     background-color: #000;
     color: #fff;
 }
@@ -132,4 +139,9 @@ footer > ul {
     margin: 2em 1px;
     display: flex;
     justify-content: space-around;
+}
+
+footer > ul > li > a > img {
+    height: 100%;
+    width: 100%;
 }
