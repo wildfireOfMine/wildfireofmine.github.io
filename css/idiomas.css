@@ -44,9 +44,10 @@ a:hover{
     color: red;
 }
 
-h1, h2, p, a{
+h1, h2, p, a, table, th, td, thead, tbody, li{
     position: relative;
-    z-index: 2;
+    z-index: 100;
+    color: #fff;
 }
 
 /* Cabecera */

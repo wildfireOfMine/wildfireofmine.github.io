@@ -83,17 +83,18 @@ nav > ul > li > a {
 
 main{
     background-color: green;
+    
 }
 
 main > section {
     padding: 100px 5px;
+    height: 100vh;
 }
 
 /* Pie */
 
 footer{
     padding: 5px 5px 8em;
-    height: 100vh;
     background-color: #000;
     color: #fff;
 }
