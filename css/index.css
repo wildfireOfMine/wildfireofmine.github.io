@@ -103,6 +103,7 @@ main{
     position: relative;
     z-index: 2;
     background-color: black;
+    background-image: url("../img/fates.jpeg");
 }
 
 main > section {

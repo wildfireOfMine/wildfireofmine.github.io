@@ -118,7 +118,73 @@ video{
 main > section {
     background-color: #000;
     padding: 100px 5px;
+    margin: 0 1em;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
+main > section > h1 {
+    font-size: 3em;
+    margin: 10px 45px;
+    text-align: left;
+}
+
+main > section > p{
+    font-size: 2em;   
+}
+
+main > section > p > a {
+    font-size: 1em;
+}
+
+main > section > p > strong {
+    font-size: 1em;
+}
+
+main > section:nth-child(2) > h1{
+    margin: 10px 45px;
+}
+
+main > section:nth-child(2) > p{
+    margin: 10px 10px;
+}
+
+main > section > ul {
+    display: inline-block;
+}
+
+main > section > ul > li {
+    text-align: left;
+    font-size: 1.6em;
+    margin: 2em 1em;
+    list-style-type: armenian;
+}
+
+main > section > ul > li > a {
+    font-size: 1em;
+}
+
+td , tr{
+    font-size: 1.3em;
+    padding: 5px 60px;
+    text-align: center;
+}
+
+th{
+    font-size: 1.8em;
+    padding: 15px 0;
+}
+
+td > a > img {
+    margin: 15px 50px;
+}
+
+td > a:hover > img{
+    transform: scale(1.5);
+    transition: transform 0.2s;
+}
+
 
 /* Pie */
 
@@ -138,4 +204,9 @@ footer > ul {
 footer > ul > li > a > img {
     height: 100%;
     width: 100%;
+}
+
+a:hover > img {
+    transform: scale(1.8);
+    transition: transform 0.2s;
 }
