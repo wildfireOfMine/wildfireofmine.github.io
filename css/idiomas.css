@@ -31,6 +31,7 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: #000;
 }
 
 h1{
@@ -165,10 +166,14 @@ main > section > ul > li > a {
     font-size: 1em;
 }
 
-td , tr{
+td, tr{
     font-size: 1.3em;
     padding: 5px 60px;
     text-align: center;
+}
+
+td > a{
+    font-size: 1em;
 }
 
 th{

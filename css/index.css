@@ -31,6 +31,7 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: #000;
 }
 
 h1{
@@ -173,4 +174,9 @@ footer > ul {
 footer > ul > li > a > img {
     height: 100%;
     width: 100%;
+}
+
+a:hover > img {
+    transform: scale(1.8);
+    transition: transform 0.2s;
 }
