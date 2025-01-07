@@ -132,7 +132,7 @@ main > section > p > a {
 }
 
 main > section:nth-child(2) > h1{
-    margin: 10px 45px;
+    margin: 10px 25px;
 }
 
 main > section:nth-child(2) > p{
@@ -175,7 +175,7 @@ td > a > img {
 }
 
 td > a:hover > img{
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: transform 0.2s;
 }
 
@@ -183,7 +183,6 @@ td > a:hover > img{
 img {
     height: 100px;
     width: 100px;
-    
 }
 
 /* Pie */
@@ -207,6 +206,6 @@ footer > ul > li > a > img {
 }
 
 a:hover > img {
-    transform: scale(1.8);
+    transform: scale(1.3);
     transition: transform 0.2s;
 }

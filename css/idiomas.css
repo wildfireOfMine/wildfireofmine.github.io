@@ -178,7 +178,7 @@ td > a{
 
 th{
     font-size: 1.8em;
-    padding: 15px 0;
+    padding: 15px 5px;
 }
 
 td > a > img {
@@ -212,6 +212,6 @@ footer > ul > li > a > img {
 }
 
 a:hover > img {
-    transform: scale(1.8);
+    transform: scale(1.3);
     transition: transform 0.2s;
 }
