@@ -106,7 +106,7 @@ main > section {
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
-    height: 100vh;
+    height: 100%;
 }
 
 main > section > h1 {
