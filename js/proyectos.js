@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
             const enlace = document.createElement("a");
             enlace.href = element.html_url;
             enlace.target = "_blank";
+            enlace.innerHTML = element.name;
             const elemento = document.createElement("li");
-            elemento.innerHTML = element.name;
-            enlace.appendChild(elemento);
-            lista.appendChild(enlace);
+            elemento.appendChild(enlace);
+            lista.appendChild(elemento);
         });
     })
     .catch(error =>{
