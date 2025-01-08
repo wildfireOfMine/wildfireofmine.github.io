@@ -159,6 +159,7 @@ th{
 
 table{
     padding: 100px 0;
+    border-collapse: collapse;
 }
 
 td > a > img {
@@ -170,6 +171,9 @@ td > a:hover > img{
     transition: transform 0.2s;
 }
 
+#ficha > tr {
+    background-color: yellow;
+}
 
 img {
     height: 100px;
