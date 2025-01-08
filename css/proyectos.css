@@ -35,6 +35,7 @@ body{
 
 h1{
     font-size: 2em;
+    padding: 10px 0;
 }
 
 h2{
@@ -144,12 +145,20 @@ main > section > ul > li {
     list-style-type: decimal;
 }
 
-.repositorio > a{
-    margin: 20px 0;
+#ficha > tr > td{
+    padding: 10px 100px;
 }
 
-main > section > ul > li > a {
-    font-size: 1em;
+td > p, td > a{
+    font-size: 1.5em;
+}
+
+th{
+    font-size: 1.8em;
+}
+
+table{
+    padding: 100px 0;
 }
 
 td > a > img {

@@ -4,17 +4,36 @@ const url = `https://api.github.com/users/${usuario}/repos`;
 
 document.addEventListener("DOMContentLoaded", ()=>{
     const lista = document.getElementById("repositorio");
+    const ficha = document.getElementById("ficha");
     fetch(url)
     .then(response=>response.json())
     .then(data =>{
         data.forEach(element => {
+
             const enlace = document.createElement("a");
             enlace.href = element.html_url;
             enlace.target = "_blank";
             enlace.innerHTML = element.name;
-            const elemento = document.createElement("li");
-            elemento.appendChild(enlace);
-            lista.appendChild(elemento);
+            const descripcion = document.createElement("p");
+            descripcion.innerText = element.description;
+            const fecha = document.createElement("p");
+            fecha.innerText = element.updated_at;
+
+            const fila = document.createElement("tr");
+            const nombre = document.createElement("td");
+            const descr = document.createElement("td");
+            const fechaPub = document.createElement("td");
+
+            nombre.appendChild(enlace);
+            descr.appendChild(descripcion);
+            if (descr.innerText === "") {
+                descr.innerText = "-";
+            }
+            fechaPub.appendChild(fecha);
+            fila.appendChild(nombre);
+            fila.appendChild(descr);
+            fila.appendChild(fechaPub);
+            ficha.appendChild(fila);
         });
     })
     .catch(error =>{
