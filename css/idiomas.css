@@ -215,3 +215,12 @@ a:hover > img {
     transform: scale(1.3);
     transition: transform 0.2s;
 }
+
+/* Responsividad */
+
+@media screen and (max-width: 970px) {
+    *{
+        color: red !important;
+    }
+
+}
