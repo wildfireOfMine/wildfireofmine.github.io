@@ -158,11 +158,18 @@ main > section > h1 {
 
 main > section > p{
     font-size: 2em;
-    margin: 0 10px;
+    margin: 30px 10px;
 }
 
 main > section > p > a {
     font-size: 1em;
+}
+
+main > section > img{
+    border: 5px solid rgb(107, 107, 107);
+    border-radius: 15px;
+    width: 870px;
+    height: 580px;
 }
 
 button{
@@ -170,7 +177,7 @@ button{
     height: 50px;
     border-radius: 15px 15px 15px 15px;
     border: 1px solid black;
-    margin: 50px 0;
+    margin: 10px 0;
 }
 
 button:hover{
