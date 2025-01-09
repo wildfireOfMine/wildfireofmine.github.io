@@ -96,7 +96,7 @@ nav > ul > li > a {
 main{
     position: relative;
     z-index: 2;
-    background-image: url("../img/edicion.webp");
+    background-image: url("../img/edicionOscuro.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
