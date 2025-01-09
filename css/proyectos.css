@@ -100,6 +100,7 @@ main{
     background-image: url("../img/proyectoOscuro.jpg");
     background-attachment: fixed;
     background-size: cover;
+    height: 1000px;
 }
 
 main > section {
@@ -160,6 +161,7 @@ th{
 table{
     padding: 100px 0;
     border-collapse: collapse;
+    margin: 100px 0;
 }
 
 td > a > img {
@@ -173,6 +175,7 @@ td > a:hover > img{
 
 #ficha > tr {
     background-color: yellow;
+    border: 1px solid black;
 }
 
 img {
