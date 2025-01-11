@@ -180,20 +180,15 @@ main > section > ul > li > a {
 
 td > a > img {
     margin: 15px 50px;
+    height: auto;
+    width: 50%;
+    max-height: 100px;
+    max-width: 100px;
 }
 
 td > a:hover > img{
     transform: scale(1.5);
     transition: transform 0.2s;
-}
-
-
-img {
-    height: auto;
-    width: 50%;
-    max-height: 100px;
-    max-width: 100px;
-    
 }
 
 /* Pie */
@@ -212,8 +207,8 @@ footer > ul {
 }
 
 footer > ul > li > a > img {
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
 }
 
 a:hover > img {
