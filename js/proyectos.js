@@ -5,6 +5,14 @@ const url = `https://api.github.com/users/${usuario}/repos`;
 document.addEventListener("DOMContentLoaded", ()=>{
     const lista = document.getElementById("repositorio");
     const ficha = document.getElementById("ficha");
+    const reloj = document.querySelector(".reloj");
+
+    setInterval(() =>{
+        const hora = new Date();
+        const horaCadena = hora.toString();
+        reloj.innerText = hora.toLocaleDateString() + horaCadena.substring(15, 25);
+    }, 1000)
+
     fetch(url)
     .then(response=>response.json())
     .then(data =>{

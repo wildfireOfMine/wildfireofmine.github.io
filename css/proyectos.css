@@ -180,14 +180,17 @@ td > a:hover > img{
 
 img {
     height: 100px;
-    width: 100px;
-    
+    width: 100px; 
+}
+
+footer > p {
+    text-align: center;
 }
 
 /* Pie */
 
 footer{
-    height: 30vh;
+    height: 33vh;
     padding: 10px 10px;
     background-color: #000;
     color: #fff;
