@@ -4,12 +4,17 @@
 
 @font-face {
     font-family: "Ubuntu";
-    src: url("./Ubuntu/Ubuntu-Regular.ttf");
+    src: url("./font/Ubuntu/Ubuntu-Regular.ttf")
 }
 
 @font-face {
     font-family: "Canterbury";
-    src: url("./canterbury/Canterbury.ttf");
+    src: url("./font/canterbury/Canterbury.ttf");
+}
+
+@font-face {
+    font-family: "Icon";
+    src: url("./font/MaterialIcons/MaterialIcons-Regular.ttf");
 }
 
 *{
@@ -79,6 +84,16 @@ header > h1 > a {
     font-size: 1em;
 }
 
+.icono::before{
+    font-family: "Icon";
+    content: "\e518";
+    font-size: 1.2em;
+}
+
+.icono:hover{
+    color: red;
+}
+
 nav{
     display: flex;
 }
@@ -90,6 +105,7 @@ nav > ul {
 
 nav > ul > li {
     margin: 0 5px;
+    align-self: center;
 }
 
 nav > ul > li > a {
