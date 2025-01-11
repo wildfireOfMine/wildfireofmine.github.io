@@ -7,3 +7,4 @@ document.addEventListener("DOMContentLoaded", e=>{
         reloj.innerText = hora.toLocaleDateString() + horaCadena.substring(15, 25);
     }, 1000)
 });
+
