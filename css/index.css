@@ -283,15 +283,26 @@ footer > p {
 
     /* Cabecera */
     header{
-
+        justify-content: space-evenly;
     }
     nav{
+        display: block;
+    }
+    nav > ul > li {
         display: none;
+    }
+    nav > ul > li:nth-child(6) {
+        display: block;
+        align-self: center;
+        padding: 10px;
     }
 
     /* Nudo */
 
     /* Pie */
+    footer{
+        height: 600px;
+    }
     footer > ul {
         display: block;
         text-align: center;
