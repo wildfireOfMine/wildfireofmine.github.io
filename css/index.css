@@ -278,7 +278,28 @@ footer > p {
 /* Responsividad */
 
 @media screen and (max-width: 910px) {
-    *{
-        color: red;
+
+    /* De arriba para abajo */
+
+    /* Cabecera */
+    header{
+
     }
+    nav{
+        display: none;
+    }
+
+    /* Nudo */
+
+    /* Pie */
+    footer > ul {
+        display: block;
+        text-align: center;
+    }
+    footer > ul > li > a > img {
+        height: 50%;
+        margin: 10px 0;
+        width: auto;
+    }
+
 }
