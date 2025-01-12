@@ -224,6 +224,10 @@ footer > p {
     text-align: center;
 }
 
+.responsivo{
+    display: none;
+}
+
 /* Pie */
 
 footer{
@@ -295,6 +299,21 @@ a:hover > img {
     }
 
     /* Nudo */
+    .ordenador{
+        display: none;
+    }
+
+    .responsivo{
+        display: block;
+    }
+
+    .responsivo > ul > li {
+        margin: 10px 0;
+    }
+
+    .responsivo > ul > li > a {
+        font-size: 2em;
+    }
 
     /* Pie */
     footer{

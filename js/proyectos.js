@@ -42,6 +42,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
             fila.appendChild(descr);
             fila.appendChild(fechaPub);
             ficha.appendChild(fila);
+
+            const nuevoEnlace = document.createElement("a");
+            nuevoEnlace.href = element.html_url;
+            nuevoEnlace.target = "_blank";
+            nuevoEnlace.innerText = element.name;
+            const elemento = document.createElement("li");
+            
+            elemento.appendChild(nuevoEnlace);
+            lista.appendChild(elemento);
         });
         const luz = document.querySelector(".luz");
         const oscuridad = document.querySelector(".oscuridad");
@@ -88,10 +97,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
     .catch(error =>{
         console.log(error);
     });
-
-
-    
 });
+
+
 
 
 
