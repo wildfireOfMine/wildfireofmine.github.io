@@ -78,14 +78,26 @@ header > h1 > a {
     font-size: 1em;
 }
 
-.icono::before{
-    font-family: "Icon";
-    content: "\e518";
+.icono{
     font-size: 1.2em;
 }
 
 .icono:hover{
     color: red;
+}
+ 
+.luz::before{
+    font-family: "Icon";
+    content: "\e518";
+}
+
+.oscuridad{
+    display: none;
+}
+
+.oscuridad::before{
+    font-family: "Icon";
+    content: "\e51c";
 }
 
 nav{

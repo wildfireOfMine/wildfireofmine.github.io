@@ -170,7 +170,11 @@ function luminosidad(){
         });
 
         e.addEventListener("mouseleave", () =>{
-            e.style.color = "black";
+            if (e.classList.value != "activo") {
+                e.style.color = "black";
+            } else {
+                e.style.color = "red";
+            }
         });
     });
 
@@ -320,7 +324,11 @@ function oscurantismo(){
         });
 
         e.addEventListener("mouseleave", () =>{
-            e.style.color = "white";
+            if (e.classList.value != "activo") {
+                e.style.color = "white";
+            } else {
+                e.style.color = "red";
+            }
         });
     });
 
