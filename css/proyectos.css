@@ -100,6 +100,15 @@ header > h1 > a {
     content: "\e51c";
 }
 
+.ignorar{
+    display: none;
+}
+
+.ignorar::before{
+    font-family: "Icon";
+    content:"\e5d2";
+}
+
 nav{
     display: flex;
 }
@@ -242,9 +251,63 @@ a:hover > img {
 
 /* Responsividad */
 
-@media screen and (max-width: 600px) {
-    *{
-        color: red !important;
+@media screen and (max-width: 1176px) {
+    /* De arriba para abajo */
+
+    /* Cabecera */
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    header > h1 {
+        align-self: center;
+    }
+    nav{
+        display: block;
+        margin: 0 10px;
+    }
+    .ignorar{
+        display: block;
+    }
+    nav > ul > li {
+        display: none;
+    }
+    nav > ul > li:nth-child(7), nav > ul > li:nth-child(1) {
+        display: block;
+        align-self: center;
+        padding: 10px 0;
+        margin: 0 10px;
+    }
+    .luz::before{
+        font-size: 2em;
+        width: 50px;
+        height: 50px;
+    }
+    .oscuridad::before{
+        font-size: 2em;
+        width: 50px;
+        height: 50px;
+    }
+    .ignorar::before{
+        font-size: 2em;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Nudo */
+
+    /* Pie */
+    footer{
+        height: 600px;
+    }
+    footer > ul {
+        display: block;
+        text-align: center;
+    }
+    footer > ul > li > a > img {
+        height: 50%;
+        margin: 10px 0;
+        width: auto;
     }
 
 }

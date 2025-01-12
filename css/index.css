@@ -295,6 +295,9 @@ footer > p {
         display: flex;
         justify-content: center;
     }
+    header > h1 {
+        align-self: center;
+    }
     nav{
         display: block;
         margin: 0 10px;
