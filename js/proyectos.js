@@ -43,53 +43,57 @@ document.addEventListener("DOMContentLoaded", ()=>{
             fila.appendChild(fechaPub);
             ficha.appendChild(fila);
         });
+        const luz = document.querySelector(".luz");
+        const oscuridad = document.querySelector(".oscuridad");
+
+        const tipoLuz = localStorage.getItem("color");
+
+        const activo = document.querySelector(".activo");
+        activo.style.color = "red";
+
+        if (tipoLuz == "blanco") {
+            luz.style.display = "none";
+            oscuridad.style.display = "block";
+            luminosidad();
+        } else {
+            luz.style.display = "block";
+            oscuridad.style.display = "none";
+            oscurantismo();
+        }
+
+        luz.addEventListener("click", e=>{
+            e.preventDefault();
+            
+            /* Manteniendo la configuración */
+            localStorage.removeItem("color");
+            localStorage.setItem("color", "blanco");
+            luz.style.display = "none";
+            oscuridad.style.display = "block";
+            
+            luminosidad();
+        });
+
+        oscuridad.addEventListener("click", e=>{
+            e.preventDefault();
+            
+            /* Manteniendo la configuración */
+            localStorage.removeItem("color");
+            localStorage.setItem("color", "negro");
+            luz.style.display = "block";
+            oscuridad.style.display = "none";
+
+            oscurantismo();
+        });
     })
     .catch(error =>{
         console.log(error);
     });
+
+
+    
 });
 
-const luz = document.querySelector(".luz");
-const oscuridad = document.querySelector(".oscuridad");
 
-const tipoLuz = localStorage.getItem("color");
-
-const activo = document.querySelector(".activo");
-activo.style.color = "red";
-
-if (tipoLuz == "blanco") {
-    luz.style.display = "none";
-    oscuridad.style.display = "block";
-    luminosidad();
-} else {
-    luz.style.display = "block";
-    oscuridad.style.display = "none";
-    oscurantismo();
-}
-
-luz.addEventListener("click", e=>{
-    e.preventDefault();
-    
-    /* Manteniendo la configuración */
-    localStorage.removeItem("color");
-    localStorage.setItem("color", "blanco");
-    luz.style.display = "none";
-    oscuridad.style.display = "block";
-    
-    luminosidad();
-});
-
-oscuridad.addEventListener("click", e=>{
-    e.preventDefault();
-    
-    /* Manteniendo la configuración */
-    localStorage.removeItem("color");
-    localStorage.setItem("color", "negro");
-    luz.style.display = "block";
-    oscuridad.style.display = "none";
-
-    oscurantismo();
-});
 
 
 
@@ -129,7 +133,9 @@ function luminosidad(){
     const enlaces = document.querySelectorAll("a");
     const imagenes = document.querySelectorAll("section > img");
     const botones = document.querySelectorAll("button");
+    const tablas = document.querySelectorAll("th");
     const activo = document.querySelector(".activo");
+    
 
     /* Párrafos <p> */
     letras.forEach(e=>{
@@ -245,6 +251,15 @@ function luminosidad(){
         });
     });
 
+    tablas.forEach(e=>{
+        e.style.color = "black";
+        e.style.textShadow = 
+        "-1px -1px 0px white, " +
+        "1px -1px 0px white, " +
+        "-1px 1px 0px white, " +
+        "1px 1px 0px white";
+    });
+
     
     /* Mantener la clase .activo */
 
@@ -283,6 +298,7 @@ function oscurantismo(){
     const enlaces = document.querySelectorAll("a");
     const imagenes = document.querySelectorAll("section > img");
     const botones = document.querySelectorAll("button");
+    const tablas = document.querySelectorAll("th");
     const activo = document.querySelector(".activo");
 
     /* Párrafos <p> */
@@ -397,6 +413,15 @@ function oscurantismo(){
         e.addEventListener("mouseleave", () =>{
             e.style.backgroundColor = "rgb(172, 172, 172)";
         });
+    });
+
+    tablas.forEach(e=>{
+        e.style.color = "white";
+        e.style.textShadow = 
+        "-1px -1px 0px black, " +
+        "1px -1px 0px black, " +
+        "-1px 1px 0px black, " +
+        "1px 1px 0px black";
     });
     
     /* Mantener la clase .activo */

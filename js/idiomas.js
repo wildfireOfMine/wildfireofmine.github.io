@@ -85,6 +85,7 @@ function luminosidad(){
     const enlaces = document.querySelectorAll("a");
     const imagenes = document.querySelectorAll("section > img");
     const botones = document.querySelectorAll("button");
+    const tablas = document.querySelectorAll("th");
     const activo = document.querySelector(".activo");
 
     /* Párrafos <p> */
@@ -201,6 +202,15 @@ function luminosidad(){
         });
     });
 
+    tablas.forEach(e=>{
+        e.style.color = "black";
+        e.style.textShadow = 
+        "-1px -1px 0px white, " +
+        "1px -1px 0px white, " +
+        "-1px 1px 0px white, " +
+        "1px 1px 0px white";
+    });
+
     
     /* Mantener la clase .activo */
 
@@ -237,6 +247,7 @@ function oscurantismo(){
     const enlaces = document.querySelectorAll("a");
     const imagenes = document.querySelectorAll("section > img");
     const botones = document.querySelectorAll("button");
+    const tablas = document.querySelectorAll("th");
     const activo = document.querySelector(".activo");
 
     /* Párrafos <p> */
@@ -351,6 +362,15 @@ function oscurantismo(){
         e.addEventListener("mouseleave", () =>{
             e.style.backgroundColor = "rgb(172, 172, 172)";
         });
+    });
+
+    tablas.forEach(e=>{
+        e.style.color = "white";
+        e.style.textShadow = 
+        "-1px -1px 0px black, " +
+        "1px -1px 0px black, " +
+        "-1px 1px 0px black, " +
+        "1px 1px 0px black";
     });
     
     /* Mantener la clase .activo */
