@@ -227,6 +227,10 @@ td > a:hover > img{
     transition: transform 0.2s;
 }
 
+.responsivo{
+    display: none;
+}
+
 
 /* Pie */
 
@@ -303,7 +307,19 @@ footer > p {
     }
 
     /* Nudo */
-    
+    .ordenador{
+        display: none;
+    }
+    .responsivo{
+        display: block;
+    }
+
+    .responsivo > p {
+        margin: 20px 0;
+    }
+    .responsivo > p > a {
+        font-size: 1.6em;
+    }
 
     /* Pie */
     footer{

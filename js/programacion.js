@@ -86,6 +86,7 @@ function luminosidad(){
     const enlaces = document.querySelectorAll("a");
     const imagenes = document.querySelectorAll("section > img");
     const botones = document.querySelectorAll("button");
+    const listas = document.querySelectorAll("li");
     const activo = document.querySelector(".activo");
 
     /* Párrafos <p> */
@@ -200,6 +201,16 @@ function luminosidad(){
         e.addEventListener("mouseleave", () =>{
             e.style.backgroundColor = "rgb(51, 51, 51)";
         });
+    });
+
+    /* Listas <li> */
+    listas.forEach(e=>{
+        e.style.color = "black";
+        e.style.textShadow = 
+        "-1px -1px 0px white, " +
+        "1px -1px 0px white, " +
+        "-1px 1px 0px white, " +
+        "1px 1px 0px white";
     });
 
     

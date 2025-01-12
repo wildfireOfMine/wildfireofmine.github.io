@@ -364,6 +364,7 @@ function oscurantismo(){
         });
     });
 
+    /* Todo en tablas <th>, <td> */
     tablas.forEach(e=>{
         e.style.color = "white";
         e.style.textShadow = 

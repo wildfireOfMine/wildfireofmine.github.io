@@ -204,6 +204,7 @@ function luminosidad(){
         });
     });
 
+    /* Todo en tablas <th>, <td> */
     tablas.forEach(e=>{
         e.style.color = "black";
         e.style.textShadow = 
