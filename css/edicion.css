@@ -219,10 +219,13 @@ td > a:hover > img{
     transition: transform 0.2s;
 }
 
-
 img {
     height: 100px;
     width: 100px;
+}
+
+.responsivo{
+    display: none;
 }
 
 /* Pie */
@@ -256,7 +259,7 @@ footer > p {
 
 /* Responsividad */
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 970px) {
     /* De arriba para abajo */
 
     /* Cabecera */
@@ -300,6 +303,18 @@ footer > p {
     }
 
     /* Nudo */
+
+    .ordenador{
+        display: none;
+    }
+
+    .responsivo{
+        display: block;
+    }
+
+    .responsivo > a > img {
+        margin: 10px;
+    }
 
 
     /* Pie */
