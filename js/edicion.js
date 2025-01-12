@@ -72,7 +72,7 @@ function luminosidad(){
     /* Cabecera */
     const cabecera = document.querySelector("header");
     const fondo = document.querySelector("main");
-    fondo.style.backgroundImage = 'url("../img/edicion.webp")';
+    fondo.style.backgroundImage = 'url("../img/edicionClaro.jpg")';
     cabecera.style.backgroundColor = "white";
     cabecera.style.color = "black";
     
