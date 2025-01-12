@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     .then(data =>{
         data.forEach(element => {
 
+            /* Tabla de Ordenador */
             const enlace = document.createElement("a");
             enlace.href = element.html_url;
             enlace.target = "_blank";
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             fila.appendChild(fechaPub);
             ficha.appendChild(fila);
 
+            /* Lista responsiva */
             const nuevoEnlace = document.createElement("a");
             nuevoEnlace.href = element.html_url;
             nuevoEnlace.target = "_blank";
