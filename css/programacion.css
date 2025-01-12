@@ -288,6 +288,10 @@ footer > p {
     }
 
     /* Nudo */
+    tr{
+        display: flex;
+        flex-direction: column;
+    }
 
     /* Pie */
     footer{
