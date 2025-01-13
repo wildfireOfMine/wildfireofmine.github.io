@@ -168,7 +168,11 @@ function luminosidad(){
 
     /* Enlaces <a> */
     enlaces.forEach(e=>{
-        e.style.color = "black";
+        if (e.classList.value != "activo") {
+            e.style.color = "black";
+        } else {
+            e.style.color = "red";
+        }
         e.style.textShadow = 
         "-1px -1px 0px white, " +
         "1px -1px 0px white, " +
@@ -336,7 +340,11 @@ function oscurantismo(){
 
     /* Enlaces <a> */
     enlaces.forEach(e=>{
-        e.style.color = "white";
+        if (e.classList.value != "activo") {
+            e.style.color = "white";
+        } else {
+            e.style.color = "red";
+        }
         e.style.textShadow = 
         "-1px -1px 0px black, " +
         "1px -1px 0px black, " +
