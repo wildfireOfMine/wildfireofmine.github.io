@@ -101,9 +101,18 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
 });
 
+/* Menú Responsivo */
 
+const desplegable = document.querySelector(".ignorar");
+const menuResponsivo = document.querySelector(".menuResponsivo");
+const pie = document.querySelector("footer");
 
-
+desplegable.addEventListener("click", e=>{
+    e.preventDefault();
+    desplegable.classList.toggle("activo");
+    menuResponsivo.classList.toggle("activo");
+    pie.classList.toggle("ocultar");
+});
 
 
 
@@ -142,6 +151,7 @@ function luminosidad(){
     const imagenes = document.querySelectorAll("section > img");
     const botones = document.querySelectorAll("button");
     const tablas = document.querySelectorAll("th");
+    const navegador = document.querySelectorAll(".menuResponsivo");
     const activo = document.querySelector(".activo");
     
 
@@ -269,6 +279,11 @@ function luminosidad(){
         "1px 1px 0px white";
     });
 
+    /* Menú responsivo desplegable */
+    navegador.forEach(e=>{
+        e.style.backgroundColor="white";
+    });
+
     
     /* Mantener la clase .activo */
 
@@ -308,6 +323,7 @@ function oscurantismo(){
     const imagenes = document.querySelectorAll("section > img");
     const botones = document.querySelectorAll("button");
     const tablas = document.querySelectorAll("th");
+    const navegador = document.querySelectorAll(".menuResponsivo");
     const activo = document.querySelector(".activo");
 
     /* Párrafos <p> */
@@ -431,6 +447,11 @@ function oscurantismo(){
         "1px -1px 0px black, " +
         "-1px 1px 0px black, " +
         "1px 1px 0px black";
+    });
+
+    /* Menú responsivo desplegable */
+    navegador.forEach(e=>{
+        e.style.backgroundColor="black";
     });
     
     /* Mantener la clase .activo */

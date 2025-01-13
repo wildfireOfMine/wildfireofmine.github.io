@@ -265,22 +265,52 @@ a:hover > img {
     }
     header > h1 {
         align-self: center;
+        z-index: 999;
     }
-    nav{
+    .menuResponsivo{
+        display: none;
+        background-color: white;
+        top: 0;
+        right: -450px;
+    }
+    .menuResponsivo > nav > ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .menuResponsivo > nav > ul > li {
+        margin: 10px;
+    }
+    .menuResponsivo > nav > ul > li > a{
+        font-size: 2.3em;
+    }
+    .menuResponsivo.activo{
+        z-index: 4;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .menuOrdenador{
         display: block;
         margin: 0 10px;
     }
     .ignorar{
         display: block;
     }
-    nav > ul > li {
+    .menuOrdenador > ul > li {
         display: none;
     }
-    nav > ul > li:nth-child(7), nav > ul > li:nth-child(1) {
+    .menuOrdenador > ul > li:nth-child(7), .menuOrdenador > ul > li:nth-child(1) {
         display: block;
         align-self: center;
         padding: 10px 0;
         margin: 0 10px;
+        z-index: 999;
     }
     .luz::before{
         font-size: 2em;
@@ -318,6 +348,10 @@ a:hover > img {
     /* Pie */
     footer{
         height: 600px;
+        position: relative;
+    }
+    .ocultar{
+        display: none;
     }
     footer > ul {
         display: block;
