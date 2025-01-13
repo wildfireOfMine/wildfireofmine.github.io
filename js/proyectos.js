@@ -117,8 +117,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 
 
-
-
 /* Funciones */
 
 function luminosidad(){
