@@ -135,6 +135,10 @@ nav > ul > li > a {
     color: #fff;
 }
 
+.menuResponsivo{
+    display: none;
+}
+
 /* Nudo */
 
 
@@ -242,6 +246,8 @@ footer > p {
     text-align: center;
 }
 
+
+
 /* Responsividad */
 
 @media screen and (max-width: 835px) {
@@ -251,21 +257,50 @@ footer > p {
     header{
         display: flex;
         justify-content: center;
+        z-index: 4;
     }
     header > h1 {
         align-self: center;
     }
-    nav{
+    .menuResponsivo{
+        display: none;
+        background-color: white;
+        top: 0;
+        right: -450px;
+    }
+    .menuResponsivo > nav > ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .menuResponsivo > nav > ul > li {
+        margin: 10px;
+    }
+    .menuResponsivo > nav > ul > li > a{
+        font-size: 2.3em;
+    }
+    .menuResponsivo.activo{
+        z-index: 4;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .menuOrdenador{
         display: block;
         margin: 0 10px;
     }
     .ignorar{
         display: block;
     }
-    nav > ul > li {
+    .menuOrdenador > ul > li {
         display: none;
     }
-    nav > ul > li:nth-child(7), nav > ul > li:nth-child(1) {
+    .menuOrdenador > ul > li:nth-child(7), .menuOrdenador > ul > li:nth-child(1) {
         display: block;
         align-self: center;
         padding: 10px 0;
@@ -296,6 +331,11 @@ footer > p {
     /* Pie */
     footer{
         height: 600px;
+        z-index: 900;
+        position: relative;
+    }
+    .ocultar{
+        display: none;
     }
     footer > ul {
         display: block;

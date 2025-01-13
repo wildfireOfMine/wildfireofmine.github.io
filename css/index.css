@@ -298,7 +298,6 @@ footer > p {
     header{
         display: flex;
         justify-content: center;
-        z-index: 4;
     }
     header > h1 {
         align-self: center;
@@ -368,7 +367,6 @@ footer > p {
     /* Pie */
     footer{
         height: 600px;
-        z-index: 900;
         position: relative;
     }
     .ocultar{
