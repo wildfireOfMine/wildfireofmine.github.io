@@ -151,7 +151,7 @@ main{
     position: relative;
     z-index: 2;
     background-color: black;
-    background-image: url("../img/fatesOscuro.jpg");
+    background-image: url("../img/fatesOscuro.webp");
     background-attachment: fixed;
     background-size: cover;
 

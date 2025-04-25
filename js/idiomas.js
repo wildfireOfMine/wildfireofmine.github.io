@@ -242,8 +242,8 @@ function luminosidad(){
     pie.style.backgroundColor = "white";
     const github = document.querySelector("#github");
     const linkedin = document.querySelector("#linkedin");
-    github.src = "../img/githubClaro.png";
-    linkedin.src = "../img/linkedinClaro.png";
+    github.src = "../img/githubClaro.webp";
+    linkedin.src = "../img/linkedinClaro.webp";
 }
 
 
@@ -414,6 +414,6 @@ function oscurantismo(){
     pie.style.backgroundColor = "black";
     const github = document.querySelector("#github");
     const linkedin = document.querySelector("#linkedin");
-    github.src = "../img/github.png";
-    linkedin.src = "../img/linkedin.png";
+    github.src = "../img/github.webp";
+    linkedin.src = "../img/linkedin.webp";
 }

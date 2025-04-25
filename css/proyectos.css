@@ -138,7 +138,7 @@ nav > ul > li > a {
 main{
     position: relative;
     z-index: 2;
-    background-image: url("../img/proyectoOscuro.jpg");
+    background-image: url("../img/proyectoOscuro.webp");
     background-attachment: fixed;
     background-size: cover;
     height: 1000px;

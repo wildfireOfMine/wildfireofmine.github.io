@@ -85,7 +85,7 @@ function luminosidad(){
     /* Cabecera */
     const cabecera = document.querySelector("header");
     const fondo = document.querySelector("main");
-    fondo.style.backgroundImage = 'url("../img/fatesClaro.jpg")';
+    fondo.style.backgroundImage = 'url("../img/fatesClaro.webp")';
     cabecera.style.backgroundColor = "white";
     cabecera.style.color = "black";
     
@@ -238,8 +238,8 @@ function luminosidad(){
     pie.style.backgroundColor = "white";
     const github = document.querySelector("#github");
     const linkedin = document.querySelector("#linkedin");
-    github.src = "../img/githubClaro.png";
-    linkedin.src = "../img/linkedinClaro.png";
+    github.src = "../img/githubClaro.webp";
+    linkedin.src = "../img/linkedinClaro.webp";
 }
 
 
@@ -250,7 +250,7 @@ function oscurantismo(){
     /* Cabecera */
     const cabecera = document.querySelector("header");
     const fondo = document.querySelector("main");
-    fondo.style.backgroundImage = 'url("../img/fatesOscuro.jpg")';
+    fondo.style.backgroundImage = 'url("../img/fatesOscuro.webp")';
     cabecera.style.backgroundColor = "black";
     cabecera.style.color = "white";
     
@@ -401,6 +401,6 @@ function oscurantismo(){
     pie.style.backgroundColor = "black";
     const github = document.querySelector("#github");
     const linkedin = document.querySelector("#linkedin");
-    github.src = "../img/github.png";
-    linkedin.src = "../img/linkedin.png";
+    github.src = "../img/github.webp";
+    linkedin.src = "../img/linkedin.webp";
 }

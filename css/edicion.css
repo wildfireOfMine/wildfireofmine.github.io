@@ -139,7 +139,7 @@ nav > ul > li > a {
 main{
     position: relative;
     z-index: 2;
-    background-image: url("../img/edicionOscuro.jpg");
+    background-image: url("../img/edicionOscuro.webp");
     background-size: cover;
     background-attachment: fixed;
 }
